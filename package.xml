@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>irsl_sim_environments</name>
+  <version>0.0.0</version>
+  <description></description>
+  <maintainer email="kakiuchi.yohei.sw@tut.jp">Yohei Kakiuchi </maintainer>
+  <license>MIT</license>
+  <author email="kakiuchi.yohei.sw@tut.jp">Yohei Kakiuchi </author>
+  <!--url type="website"></url-->
+  <url type="repository">https://github.com/IRSL-tut/irsl_sim_environments</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>choreonoid</depend>
+
+  <export>
+    <build_type>catkin</build_type>
+  </export>
+</package>
