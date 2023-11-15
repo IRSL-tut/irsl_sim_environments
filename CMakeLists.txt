@@ -4,6 +4,8 @@ cmake_policy(SET CMP0057 NEW)
 
 project(irsl_sim_environments)
 
+find_package(catkin REQUIRED)
+
 catkin_package()
 
 install(DIRECTORY cnoid

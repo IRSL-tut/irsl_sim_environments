@@ -2,7 +2,7 @@
 <package format="2">
   <name>irsl_sim_environments</name>
   <version>0.0.0</version>
-  <description></description>
+  <description>Objects using in simulator</description>
   <maintainer email="kakiuchi.yohei.sw@tut.jp">Yohei Kakiuchi </maintainer>
   <license>MIT</license>
   <author email="kakiuchi.yohei.sw@tut.jp">Yohei Kakiuchi </author>
