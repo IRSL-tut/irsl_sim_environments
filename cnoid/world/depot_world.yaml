@@ -1,0 +1,20 @@
+world:
+  World:
+    name: DepotWorld
+    draw_grid: False
+  Camera:
+    lookEye: [-5.5, -0.0, 2.0]
+    lookUp: [0.0, 0.0, 1.0]
+    lookAtCenter: [-2.5, -0.0, 0.7]
+    fov: 0.75
+
+objects:
+  -
+    model: 'package://irsl_sim_environments/cnoid/depot/depot.body'
+    name: 'Depot'
+    fix: True
+  -
+    model: 'package://irsl_sim_environments/cnoid/dining_table/dining_table.body'
+    name: 'Table'
+    initial_coords: { pos: [-2.5, 0.0, 0.0] }
+    fix: True
