@@ -1,0 +1,44 @@
+format: ChoreonoidBody
+format_version: 2.0
+angle_unit: degree
+name: "LakeHouse"
+root_link: "fixed"
+links: 
+  - 
+    name: "fixed"
+    joint_type: fixed
+    mass: 1000
+    center_of_mass: [ 0, 0, -0.1 ]
+    inertia: [ 
+      100, 0, 0, 
+      0, 100, 0, 
+      0, 0, 100 ]
+    material: Ground
+    elements: 
+      - 
+        type: Visual
+        elements:
+          - 
+            type: Transform
+            translation: [ 0, 0, -6.901 ]
+            elements:
+              - 
+                type: Resource
+                uri: "LakeHouse.scen"
+      - 
+        type: Collision
+        elements: 
+          - 
+            type: Transform
+            translation: [ 0, 0, -0.1 ]
+            elements: 
+              Shape:
+                appearance: { material: { diffuseColor: [ 1, 0, 0 ] }}
+                geometry: { type: Box, size: [ 10, 10, 0.2 ] }
+          - 
+            type: Transform
+            translation: [ 1.85, 0, 2.4624 ]
+            elements: 
+              Shape:
+                appearance: { material: { diffuseColor: [ 1, 0, 0 ] }}
+                geometry: { type: Box, size: [ 8.1, 5.6, 0.2 ] }

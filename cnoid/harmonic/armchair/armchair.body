@@ -1,0 +1,22 @@
+format: ChoreonoidBody
+format_version: 2.0
+angle_unit: degree
+name: "ArmChair"
+root_link: "fixed"
+links: 
+  - 
+    name: "fixed"
+    joint_type: fixed
+    mass: 1000
+    center_of_mass: [ 0, 0, 0.4 ]
+    inertia: [ 
+      100, 0, 0, 
+      0, 100, 0, 
+      0, 0, 100 ]
+    elements: 
+      - 
+        type: Visual
+        elements:
+          - 
+            type: Resource
+            uri: "armchair.scen"

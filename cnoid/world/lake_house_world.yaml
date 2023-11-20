@@ -1,0 +1,75 @@
+world:
+  World:
+    name: LakeHouseWorld
+    draw_grid: False
+  Camera:
+    lookEye: [3.0, -0.0, 1.7]
+    lookUp: [0.0, 0.0, 1.0]
+    lookAtCenter: [1.0, -0.0, 0.7]
+    fov: 0.75
+
+objects:
+  -
+    model: 'package://irsl_sim_environments/cnoid/harmonic/lakehouse/lakehouse.body'
+    name: 'House'
+    fix: True
+  -
+    model: 'package://irsl_sim_environments/cnoid/dining_table/dining_table.body'
+    name: 'MainTable'
+    initial_coords: { pos: [1.0, 0.0, 0.0] }
+    fix: True
+  -
+    model: 'package://irsl_sim_environments/cnoid/harmonic/sky/sky.body'
+    name: 'Sky'
+    initial_coords: { pos: [0.0, 0.0, -2.0] }
+    fix: True
+  -
+    model: 'package://irsl_sim_environments/cnoid/harmonic/armchair/armchair.body'
+    name: 'Armchair_01'
+    initial_coords: { pos: [-0.74, -0.13, 0.0], aa: [0, 0, 1, -0.77] }
+    fix: True
+  -
+    model: 'package://irsl_sim_environments/cnoid/harmonic/armchair/armchair.body'
+    name: 'Armchair_02'
+    initial_coords: { pos: [-0.62, -1.44, 0.0], aa: [0, 0, 1, -1.75] }
+    fix: True
+  -
+    model: 'package://irsl_sim_environments/cnoid/dining_table/dining_table.body'
+    name: 'DiningTable'
+    initial_coords: { pos: [3.45, -3.88, 0.0], aa: [0, 0, 1, 1.5707963268] }
+    fix: True
+  -
+    model: 'package://irsl_sim_environments/cnoid/harmonic/diningchair/diningchair.body'
+    name: 'DiningChair_01'
+    initial_coords: { pos: [2.9, -3.34, 0.0], aa: [0, 0, 1, -0.03] }
+    fix: True
+  -
+    model: 'package://irsl_sim_environments/cnoid/harmonic/diningchair/diningchair.body'
+    name: 'DiningChair_02'
+    initial_coords: { pos: [3.87, -3.19, 0.0], aa: [0, 0, 1, -0.32] }
+    fix: True
+  -
+    model: 'package://irsl_sim_environments/cnoid/harmonic/diningchair/diningchair.body'
+    name: 'DiningChair_03'
+    initial_coords: { pos: [3.81, -4.43, 0.0], aa: [0, 0, 1, -2.69] }
+    fix: True
+  -
+    model: 'package://irsl_sim_environments/cnoid/harmonic/diningchair/diningchair.body'
+    name: 'DiningChair_04'
+    initial_coords: { pos: [2.88, -4.60, 0.0], aa: [0, 0, 1, 2.87] }
+    fix: True
+  -
+    model: 'package://irsl_sim_environments/cnoid/harmonic/refrigerator/refrigerator.body'
+    name: 'Fridge'
+    initial_coords: { pos: [1.75, -3.89, 0.0] }
+    fix: True
+  -
+    model: 'package://irsl_sim_environments/cnoid/harmonic/oven/oven.body'
+    name: 'Oven'
+    initial_coords: { pos: [4.34, -6.36, 0.0], aa: [0, 0, 1, 1.5707963268] }
+    fix: True
+  -
+    model: 'package://irsl_sim_environments/cnoid/harmonic/officechair/officechair.body'
+    name: 'OfficeChair'
+    initial_coords: { pos: [-0.74, 1.45, 2.58], aa: [0, 0, 1, -0.81] }
+    fix: True
