@@ -4,11 +4,11 @@ cmake_policy(SET CMP0057 NEW)
 
 project(irsl_sim_environments)
 
-find_package(catkin REQUIRED)
+find_package(ament_cmake REQUIRED)
 
-catkin_package()
+ament_package()
 
 install(DIRECTORY cnoid
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+  DESTINATION share/${PROJECT_NAME}
   USE_SOURCE_PERMISSIONS
   )

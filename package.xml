@@ -9,10 +9,10 @@
   <!--url type="website"></url-->
   <url type="repository">https://github.com/IRSL-tut/irsl_sim_environments</url>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
   <depend>choreonoid</depend>
 
   <export>
-    <build_type>catkin</build_type>
+    <build_type>ament_cmake</build_type>
   </export>
 </package>
