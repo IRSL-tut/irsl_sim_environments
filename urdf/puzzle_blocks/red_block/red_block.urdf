@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<robot name="red_block">
+	<link name="base_link">
+		<visual>
+			<geometry>
+				<mesh filename="package://irsl_sim_environments/urdf/puzzle_blocks/red_block/red_block_base_link.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0.000000000000e+00 0.000000000000e+00 0.000000000000e+00" rpy="0.000000000000e+00 -0.000000000000e+00 0.000000000000e+00" />
+			<geometry>
+				<box size="3.000000000000e-02 3.000000000000e-02 3.000000000000e-02" />
+			</geometry>
+		</collision>
+		<collision>
+			<origin xyz="0.000000000000e+00 -3.000000000000e-02 0.000000000000e+00" rpy="0.000000000000e+00 -0.000000000000e+00 0.000000000000e+00" />
+			<geometry>
+				<box size="3.000000000000e-02 3.000000000000e-02 3.000000000000e-02" />
+			</geometry>
+		</collision>
+		<collision>
+			<origin xyz="0.000000000000e+00 0.000000000000e+00 3.000000000000e-02" rpy="0.000000000000e+00 -0.000000000000e+00 0.000000000000e+00" />
+			<geometry>
+				<box size="3.000000000000e-02 3.000000000000e-02 3.000000000000e-02" />
+			</geometry>
+		</collision>
+		<collision>
+			<origin xyz="0.000000000000e+00 3.000000000000e-02 3.000000000000e-02" rpy="0.000000000000e+00 -0.000000000000e+00 0.000000000000e+00" />
+			<geometry>
+				<box size="3.000000000000e-02 3.000000000000e-02 3.000000000000e-02" />
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="0.021599999999999998" />
+			<origin xyz="0.000000000000e+00 0.000000000000e+00 1.500000000000e-02" />
+			<inertia ixx="1.7819999999999995e-05" ixy="0" ixz="0" iyy="8.0999999999999987e-06" iyz="-4.8599999999999992e-06" izz="1.2959999999999998e-05" />
+		</inertial>
+	</link>
+</robot>

@@ -1,0 +1,85 @@
+format: ChoreonoidBody
+format_version: 2.0
+angle_unit: degree
+name: "puzzle_base"
+root_link: "base_link"
+links: 
+  - 
+    name: "base_link"
+    elements: 
+      - 
+        type: Transform
+        elements: 
+          - 
+            type: Transform
+            translation: [ 0, 0, 0.003 ]
+            elements: 
+              - 
+                type: Shape
+                appearance: 
+                  material: 
+                    diffuse: [ 0.651, 0.602, 0.497 ]
+                    emissive: [ 0.279, 0.258, 0.213 ]
+                geometry: 
+                  type: Box
+                  size: [ 0.0915, 0.0915, 0.006 ]
+          - 
+            type: Transform
+            translation: [ 0, 0.05175, 0.006 ]
+            elements: 
+              - 
+                type: Shape
+                appearance: 
+                  material: 
+                    diffuse: [ 0.651, 0.602, 0.497 ]
+                    emissive: [ 0.279, 0.258, 0.213 ]
+                geometry: 
+                  type: Box
+                  size: [ 0.0915, 0.012, 0.012 ]
+          - 
+            type: Transform
+            translation: [ 0, -0.05175, 0.006 ]
+            elements: 
+              - 
+                type: Shape
+                appearance: 
+                  material: 
+                    diffuse: [ 0.651, 0.602, 0.497 ]
+                    emissive: [ 0.279, 0.258, 0.213 ]
+                geometry: 
+                  type: Box
+                  size: [ 0.0915, 0.012, 0.012 ]
+          - 
+            type: Transform
+            translation: [ 0.05175, 0, 0.006 ]
+            elements: 
+              - 
+                type: Shape
+                appearance: 
+                  material: 
+                    diffuse: [ 0.651, 0.602, 0.497 ]
+                    emissive: [ 0.279, 0.258, 0.213 ]
+                geometry: 
+                  type: Box
+                  size: [ 0.012, 0.1155, 0.012 ]
+          - 
+            type: Transform
+            translation: [ -0.05175, 0, 0.006 ]
+            elements: 
+              - 
+                type: Shape
+                appearance: 
+                  material: 
+                    diffuse: [ 0.651, 0.602, 0.497 ]
+                    emissive: [ 0.279, 0.258, 0.213 ]
+                geometry: 
+                  type: Box
+                  size: [ 0.012, 0.1155, 0.012 ]
+    joint_name: base_link
+    joint_type: free
+    mass: 0.0219699
+    center_of_mass: [ 0, 0, 0.00462812 ]
+    inertia: [ 
+      2.88053e-05, 0, 0, 
+      0, 2.88053e-05, 0, 
+      0, 0, 4.39887e-05 ]

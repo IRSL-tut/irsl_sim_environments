@@ -1,0 +1,75 @@
+format: ChoreonoidBody
+format_version: 2.0
+angle_unit: degree
+name: "lightgreen_block"
+root_link: "base_link"
+links: 
+  - 
+    name: "base_link"
+    elements: 
+      - 
+        type: Visual
+        elements: 
+          - 
+            type: Transform
+            elements: 
+              - 
+                type: Transform
+                elements: 
+                  - 
+                    type: Resource
+                    uri: "resource/cube_with_c.scen"
+              - 
+                type: Transform
+                translation: [ 0, 0, 0.03 ]
+                elements: 
+                  - 
+                    type: Resource
+                    uri: "resource/cube_with_c.scen"
+              - 
+                type: Transform
+                translation: [ 0, -0.03, 0.03 ]
+                elements: 
+                  - 
+                    type: Resource
+                    uri: "resource/cube_with_c.scen"
+      - 
+        type: Collision
+        elements: 
+          - 
+            type: Group
+            elements: 
+              - 
+                type: Transform
+                elements: 
+                  - 
+                    type: Shape
+                    geometry: 
+                      type: Box
+                      size: [ 0.03, 0.03, 0.03 ]
+              - 
+                type: Transform
+                translation: [ 0, 0, 0.03 ]
+                elements: 
+                  - 
+                    type: Shape
+                    geometry: 
+                      type: Box
+                      size: [ 0.03, 0.03, 0.03 ]
+              - 
+                type: Transform
+                translation: [ 0, -0.03, 0.03 ]
+                elements: 
+                  - 
+                    type: Shape
+                    geometry: 
+                      type: Box
+                      size: [ 0.03, 0.03, 0.03 ]
+    joint_name: base_link
+    joint_type: free
+    mass: 0.0162
+    center_of_mass: [ 0, -0.01, 0.02 ]
+    inertia: [ 
+      8.91e-06, 0, 0, 
+      0, 5.67e-06, 1.62e-06, 
+      0, 1.62e-06, 5.67e-06 ]

@@ -1,0 +1,91 @@
+format: ChoreonoidBody
+format_version: 2.0
+angle_unit: degree
+name: "yellow_block"
+root_link: "base_link"
+links: 
+  - 
+    name: "base_link"
+    elements: 
+      - 
+        type: Visual
+        elements: 
+          - 
+            type: Transform
+            elements: 
+              - 
+                type: Transform
+                elements: 
+                  - 
+                    type: Resource
+                    uri: "resource/cube_with_c.scen"
+              - 
+                type: Transform
+                translation: [ 0, 0, 0.03 ]
+                elements: 
+                  - 
+                    type: Resource
+                    uri: "resource/cube_with_c.scen"
+              - 
+                type: Transform
+                translation: [ 0, 0.03, 0.03 ]
+                elements: 
+                  - 
+                    type: Resource
+                    uri: "resource/cube_with_c.scen"
+              - 
+                type: Transform
+                translation: [ 0, 0.06, 0.03 ]
+                elements: 
+                  - 
+                    type: Resource
+                    uri: "resource/cube_with_c.scen"
+      - 
+        type: Collision
+        elements: 
+          - 
+            type: Group
+            elements: 
+              - 
+                type: Transform
+                elements: 
+                  - 
+                    type: Shape
+                    geometry: 
+                      type: Box
+                      size: [ 0.03, 0.03, 0.03 ]
+              - 
+                type: Transform
+                translation: [ 0, 0, 0.03 ]
+                elements: 
+                  - 
+                    type: Shape
+                    geometry: 
+                      type: Box
+                      size: [ 0.03, 0.03, 0.03 ]
+              - 
+                type: Transform
+                translation: [ 0, 0.03, 0.03 ]
+                elements: 
+                  - 
+                    type: Shape
+                    geometry: 
+                      type: Box
+                      size: [ 0.03, 0.03, 0.03 ]
+              - 
+                type: Transform
+                translation: [ 0, 0.06, 0.03 ]
+                elements: 
+                  - 
+                    type: Shape
+                    geometry: 
+                      type: Box
+                      size: [ 0.03, 0.03, 0.03 ]
+    joint_name: base_link
+    joint_type: free
+    mass: 0.0216
+    center_of_mass: [ 0, 0.0225, 0.0225 ]
+    inertia: [ 
+      2.025e-05, 0, 0, 
+      0, 6.885e-06, -3.645e-06, 
+      0, -3.645e-06, 1.6605e-05 ]

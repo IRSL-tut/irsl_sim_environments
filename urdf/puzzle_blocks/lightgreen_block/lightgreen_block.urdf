@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<robot name="lightgreen_block">
+	<link name="base_link">
+		<visual>
+			<geometry>
+				<mesh filename="package://irsl_sim_environments/urdf/puzzle_blocks/lightgreen_block/lightgreen_block_base_link.dae" />
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0.000000000000e+00 0.000000000000e+00 0.000000000000e+00" rpy="0.000000000000e+00 -0.000000000000e+00 0.000000000000e+00" />
+			<geometry>
+				<box size="3.000000000000e-02 3.000000000000e-02 3.000000000000e-02" />
+			</geometry>
+		</collision>
+		<collision>
+			<origin xyz="0.000000000000e+00 0.000000000000e+00 3.000000000000e-02" rpy="0.000000000000e+00 -0.000000000000e+00 0.000000000000e+00" />
+			<geometry>
+				<box size="3.000000000000e-02 3.000000000000e-02 3.000000000000e-02" />
+			</geometry>
+		</collision>
+		<collision>
+			<origin xyz="0.000000000000e+00 -3.000000000000e-02 3.000000000000e-02" rpy="0.000000000000e+00 -0.000000000000e+00 0.000000000000e+00" />
+			<geometry>
+				<box size="3.000000000000e-02 3.000000000000e-02 3.000000000000e-02" />
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="0.016199999999999999" />
+			<origin xyz="0.000000000000e+00 -1.000000000000e-02 2.000000000000e-02" />
+			<inertia ixx="8.9099999999999977e-06" ixy="0" ixz="0" iyy="5.6699999999999999e-06" iyz="1.6199999999999993e-06" izz="5.6699999999999991e-06" />
+		</inertial>
+	</link>
+</robot>
