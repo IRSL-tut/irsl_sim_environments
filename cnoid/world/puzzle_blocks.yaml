@@ -1,0 +1,43 @@
+world:
+  World:
+    name: DepotWorld
+    draw_grid: False
+  Camera:
+    lookEye: [-0.5, -0.0, 0.5]
+    lookUp: [0.0, 0.0, 1.0]
+    lookAtCenter: [0.0, 0.0, 0.0]
+    fov: 0.75
+
+objects:
+  -
+    model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/puzzle_base.body'
+    name: 'Base'
+    fix: True
+  -
+    model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/yellow_block/yellow_block.body'
+    name: 'yellow_block'
+    initial_coords: { pos: [-0.03,  0.1,  0.046], aa: [0, 1, 0, 3.141592653589793] }
+  -
+    model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/red_block/red_block.body'
+    name: 'red_block'
+    initial_coords: { pos: [ 0.1,   0.1,  0.016] }
+  -
+    model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/purple_block/purple_block.body'
+    name: 'purple_block'
+    initial_coords: { pos: [0.13,   0.0,  0.046], aa: [0, 1, 0, 3.141592653589793] }
+  -
+    model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/lightgreen_block/lightgreen_block.body'
+    name: 'lightgreen_block'
+    initial_coords: { pos: [ 0.1,  -0.1,  0.046], aa: [0, 1, 0, 3.141592653589793] }
+  -
+    model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/green_block/green_block.body'
+    name: 'green_block'
+    initial_coords: { pos: [-0.03, -0.13, 0.046], aa: [0, 1, 0, 3.141592653589793] }
+  -
+    model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/cyan_block/cyan_block.body'
+    name: 'cyan_block'
+    initial_coords: { pos: [ 0.03,  0.2,  0.046], aa: [0, 1, 0, 3.141592653589793] }
+  -
+    model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/brown_block/brown_block.body'
+    name: 'brown_block'
+    initial_coords: { pos: [ 0.03, -0.2,  0.016] }
