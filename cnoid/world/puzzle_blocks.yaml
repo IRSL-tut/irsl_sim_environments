@@ -1,3 +1,19 @@
+### variables
+sqrt2:
+  &sq2 0.7071067811865476
+sqrt3:
+  &sq3 0.5773502691896257
+minus_sqrt2:
+  &msq2 -0.7071067811865476
+minus_sqrt3:
+  &msq3 -0.5773502691896257
+pi_3_2:
+  &pi_3_2 2.0943951023931953
+pi:
+  &pi 3.141592653589793
+pi_2:
+  &pi_2 1.5707963267948966
+
 world:
   World:
     name: DepotWorld
@@ -16,28 +32,65 @@ objects:
   -
     model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/yellow_block/yellow_block.body'
     name: 'yellow_block'
-    initial_coords: { pos: [-0.03,  0.1,  0.046], aa: [0, 1, 0, 3.141592653589793] }
+    initial_coords: { pos: [  0.1, -0.10, 0.016], aa: [ *sq3, *sq3, *sq3, *pi_3_2 ] }
   -
     model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/red_block/red_block.body'
     name: 'red_block'
-    initial_coords: { pos: [ 0.1,   0.1,  0.016] }
+    initial_coords: { pos: [-0.03,  0.13, 0.016], aa: [ *sq3, *msq3, *sq3, *pi_3_2 ] }
   -
     model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/purple_block/purple_block.body'
     name: 'purple_block'
-    initial_coords: { pos: [0.13,   0.0,  0.046], aa: [0, 1, 0, 3.141592653589793] }
+    initial_coords: { pos: [ 0.13,  0.00, 0.046], aa: [ *sq2, *sq2, 0, *pi ] }
   -
     model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/lightgreen_block/lightgreen_block.body'
     name: 'lightgreen_block'
-    initial_coords: { pos: [ 0.1,  -0.1,  0.046], aa: [0, 1, 0, 3.141592653589793] }
+    initial_coords: { pos: [  0.13,  0.13, 0.016], aa: [ *sq3, *sq3, *msq3, *pi_3_2 ] }
   -
     model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/green_block/green_block.body'
     name: 'green_block'
-    initial_coords: { pos: [-0.03, -0.13, 0.046], aa: [0, 1, 0, 3.141592653589793] }
+    initial_coords: { pos: [ 0.03,  0.20, 0.016], aa: [ 0, 0, -1, *pi_2 ] }
   -
     model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/cyan_block/cyan_block.body'
     name: 'cyan_block'
-    initial_coords: { pos: [ 0.03,  0.2,  0.046], aa: [0, 1, 0, 3.141592653589793] }
+    initial_coords: { pos: [-0.03, -0.13, 0.016], aa: [ 0, -1, 0, *pi_2 ] }
   -
     model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/brown_block/brown_block.body'
     name: 'brown_block'
-    initial_coords: { pos: [ 0.03, -0.2,  0.016] }
+    initial_coords: { pos: [ 0.03, -0.20, 0.016] }
+## offset of success pattern
+# yellow:     0.00, -0.03,  0.00
+# red:        0.00,  0.03,  0.03
+# purple:     0.03,  0.00,  0.03
+# lightgreen: 0.03,  0.03,  0.06
+# green:     -0.03,  0.03,  0.03
+# cyan:       0.00,  0.00,  0.00 -> 0.00, 0.00, 0.021
+# brown:     -0.03, -0.03,  0.03
+## ## old settings
+##   -
+##     model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/yellow_block/yellow_block.body'
+##     name: 'yellow_block'
+##     initial_coords: { pos: [-0.03,  0.1,  0.046], aa: [0, 1, 0, 3.141592653589793] }
+##   -
+##     model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/red_block/red_block.body'
+##     name: 'red_block'
+##     initial_coords: { pos: [ 0.1,   0.1,  0.016] }
+##   -
+##     model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/purple_block/purple_block.body'
+##     name: 'purple_block'
+##     initial_coords: { pos: [0.13,   0.0,  0.046], aa: [0, 1, 0, 3.141592653589793] }
+##   -
+##     model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/lightgreen_block/lightgreen_block.body'
+##     name: 'lightgreen_block'
+##     initial_coords: { pos: [ 0.1,  -0.1,  0.046], aa: [0, 1, 0, 3.141592653589793] }
+##   -
+##     model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/green_block/green_block.body'
+##     name: 'green_block'
+##     initial_coords: { pos: [-0.03, -0.13, 0.046], aa: [0, 1, 0, 3.141592653589793] }
+##   -
+##     model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/cyan_block/cyan_block.body'
+##     name: 'cyan_block'
+##     initial_coords: { pos: [ 0.03,  0.2,  0.046], aa: [0, 1, 0, 3.141592653589793] }
+##   -
+##     model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/brown_block/brown_block.body'
+##     name: 'brown_block'
+##     initial_coords: { pos: [ 0.03, -0.2,  0.016] }
