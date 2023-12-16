@@ -30,6 +30,11 @@ objects:
     name: 'Base'
     fix: True
   -
+    model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/puzzle_table.body'
+    name: 'Table'
+    initial_coords: { pos: [  0.04, 0, -0.025] }
+    fix: True
+  -
     model: 'package://irsl_sim_environments/cnoid/puzzle_blocks/yellow_block/yellow_block.body'
     name: 'yellow_block'
     initial_coords: { pos: [  0.1, -0.10, 0.016], aa: [ *sq3, *sq3, *sq3, *pi_3_2 ] }
