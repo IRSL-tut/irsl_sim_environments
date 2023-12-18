@@ -24,9 +24,7 @@ exec(open('/choreonoid_ws/install/share/irsl_choreonoid/sample/irsl_import.py').
 
 ##
 from irsl_choreonoid_ros.setup_cnoid import SetupCnoid
-SetupCnoid.setEnvironmentFromYaml('package://irsl_sim_environments/cnoid/world/puzzle_blocks.yaml')
-
-offset=coordinates(npa([0.3, 0, 0]))
+SetupCnoid.setEnvironmentFromYaml('package://irsl_sim_environments/cnoid/world/puzzle_blocks.yaml', offset=coordinates(fv(0.2, 0, 0.05)))
 
 itm=cbase.RootItem.instance.childItem
 while itm is not None:
@@ -34,7 +32,7 @@ while itm is not None:
     if '_block' in itm.name:
         name = itm.name[:-6]
         cds=coordinates(itm.body.rootLink.T)
-        cds.transform(offset, coordinates.wrt.world)
+        #cds.transform(offset, coordinates.wrt.world)
         pos = cds.pos; RPY = cds.getRPY()
         xx = pos[0]; yy = pos[1]; zz = pos[2]
         RR = RPY[0]; PP = RPY[1]; YY = RPY[2]
